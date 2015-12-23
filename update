@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -z "$1" ] && { echo Specify the domain name where /hello-websockets can be found.; exit; }
+
+curl https://$1/hello-websockets > index.html
